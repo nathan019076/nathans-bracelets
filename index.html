@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathan’s Bracelets</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; margin: 0; }
+    nav {
+      background-color: #020617;
+      display: flex; justify-content: center; gap: 25px; padding: 12px;
+    }
+    nav a { color: #e5e7eb; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #93c5fd; }
+    .hero {
+      padding: 70px 20px; text-align: center;
+      background: linear-gradient(135deg, #bfdbfe, #eff6ff);
+    }
+    .hero h2 { font-size: 2.4rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: auto; }
+    .badge {
+      display: inline-block; margin-top: 12px; padding: 6px 12px;
+      background: #e0e7ff; color: #1e3a8a; border-radius: 999px; font-weight: 600;
+    }
+    .section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    .section h2 { text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    .products {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px;
+    }
+    .product {
+      background: white; border-radius: 14px; padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center;
+    }
+    .product img { width: 100%; border-radius: 10px; margin-bottom: 12px; }
+    .product h3 { margin: 10px 0 5px; }
+    .price { font-size: 1.1rem; font-weight: bold; margin-bottom: 6px; }
+    .shipping { font-size: 0.95rem; margin-bottom: 12px; color: #374151; }
+    .product a {
+      display: inline-block; background-color: #2563eb; color: white;
+      padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;
+    }
+    .product a:hover { background-color: #1d4ed8; }
+    .card {
+      background-color: #ffffff; border-radius: 16px; padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    form { display: grid; gap: 14px; max-width: 600px; margin: auto; }
+    input, textarea, button {
+      padding: 12px; border-radius: 8px; border: 1px solid #d1d5db; font-size: 1rem;
+    }
+    button { background-color: #2563eb; color: white; border: none; cursor: pointer; font-weight: 600; }
+    button:hover { background-color: #1d4ed8; }
+    .notice { background:#fef3c7; color:#92400e; padding:14px; border-radius:10px; margin-top:14px; }
+    footer {
+      background-color: #020617; color: #cbd5f5; text-align: center; padding: 25px 15px; margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nathan’s Bracelets</h1>
+    <p>Handmade bracelets • Simple • Stylish</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#custom">Custom Order</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Bracelets Made With Care</h2>
+    <p>Unique handmade bracelets that fit your style. Great for gifts, friends, or everyday wear.</p>
+    <div class="badge">UK Only • £1.50 Delivery</div>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Shop Bracelets</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/400x260" alt="Beaded Bracelet" />
+        <h3>Beaded Bracelet</h3>
+        <div class="price">£5.00</div>
+        <div class="shipping">UK delivery: £1.50</div>
+        <a href="https://paypal.me/REPLACE_WITH_YOUR_LINK" target="_blank">Buy (PayPal – GBP)</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/400x260" alt="Friendship Bracelet" />
+        <h3>Friendship Bracelet</h3>
+        <div class="price">£4.00</div>
+        <div class="shipping">UK delivery: £1.50</div>
+        <a href="https://paypal.me/REPLACE_WITH_YOUR_LINK" target="_blank">Buy (PayPal – GBP)</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/400x260" alt="Custom Bracelet" />
+        <h3>Custom Bracelet</h3>
+        <div class="price">£7.00</div>
+        <div class="shipping">UK delivery: £1.50</div>
+        <a href="https://paypal.me/REPLACE_WITH_YOUR_LINK" target="_blank">Buy (PayPal – GBP)</a>
+      </div>
+    </div>
+
+    <div class="notice">
+      <strong>After you pay:</strong> Please include your <em>name, full UK address, and bracelet type</em> in the PayPal note.
+    </div>
+  </section>
+
+  <section class="section" id="custom">
+    <h2>Custom Order</h2>
+    <div class="card">
+      <p style="text-align:center;">Want a custom bracelet? Fill this in, then pay for a <strong>Custom Bracelet (£7.00 + £1.50 delivery)</strong>.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Wrist size (cm)" />
+        <input type="text" placeholder="Colours / style" />
+        <textarea rows="4" placeholder="Any extra details"></textarea>
+        <button type="submit">Submit Custom Request</button>
+      </form>
+      <div class="notice">This form sends details to you manually. Make sure customers also write their details in PayPal notes.</div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>Nathan’s Bracelets is a small handmade UK brand focused on creativity and quality. Every bracelet is made carefully and designed to look great every day.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email: nathansbracelets@example.com<br />Instagram: @nathansbracelets</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Nathan’s Bracelets • UK Only Shipping</p>
+  </footer>
+</body>
+</html>
